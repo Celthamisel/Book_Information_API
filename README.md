@@ -1,6 +1,6 @@
-# tugasapi
+# tugas REST API
 
-A new Flutter project.
+Celtha Missella H1101221015
 
 ## Getting Started
 
