@@ -7,7 +7,7 @@ class Book {
   final String genre;
   final String summary;
   final String imgUrl;
-  final List<Review> reviews; // Tambahkan properti reviews
+  final List<Review> reviews;
 
   Book({
     required this.id,
@@ -16,7 +16,7 @@ class Book {
     required this.genre,
     required this.summary,
     required this.imgUrl,
-    required this.reviews, // Tambahkan parameter ini
+    required this.reviews,
   });
 
   factory Book.fromJson(Map<String, dynamic> json) {
@@ -30,7 +30,7 @@ class Book {
       genre: json['genre'],
       summary: json['summary'],
       imgUrl: json['img_url'],
-      reviews: reviewsList, // Assign ke reviews
+      reviews: reviewsList,
     );
   }
 }
