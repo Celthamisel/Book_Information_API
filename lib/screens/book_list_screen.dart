@@ -82,10 +82,10 @@ class _BookListScreenState extends State<BookListScreen> {
                                 'Reviews:',
                                 style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                               ),
-                              // Menampilkan daftar ulasan
+                              // Menampilkan daftar review
                               ListView.builder(
-                                physics: NeverScrollableScrollPhysics(), // Agar ListView tidak dapat digulir
-                                shrinkWrap: true, // Agar ListView menyusut sesuai konten
+                                physics: NeverScrollableScrollPhysics(),
+                                shrinkWrap: true,
                                 itemCount: book.reviews.length,
                                 itemBuilder: (context, reviewIndex) {
                                   final review = book.reviews[reviewIndex];
